@@ -75,7 +75,7 @@ impl ConfigLoader {
                         .clone()
                         .build()
                         .map(|config| {
-                            f(config);
+                            tokio::spawn(f(config));
                         })
                         .unwrap_or_else(|e| {
                             log::error!("Failed to reload config: {e}");
