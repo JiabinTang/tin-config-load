@@ -5,4 +5,7 @@ edition = "2024"
 
 [dependencies]
 config = "0"
+futures = "0"
+log = "0"
+notify = "8"
 serde = "1"
