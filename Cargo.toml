@@ -2,6 +2,16 @@
 name = "tin-config-load"
 version = "0.1.0"
 edition = "2024"
+authors = ["唐加彬 me@tangjiabin.cn"]
+description = "A simple Rust library for loading configuration from files and environment variables"
+license = "MIT"
+repository = "https://github.com/JiabinTang/tin-config-load"
+homepage = "https://github.com/JiabinTang/tin-config-load"
+readme = "README.md"
+
+[lib]
+name = "tin_config_load"
+path = "src/lib.rs"
 
 [dependencies]
 config = "0"
